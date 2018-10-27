@@ -20,13 +20,11 @@ describe "#display_board in 'lib/display_board.rb" do
 
       output = capture_puts{ display_board(board) }
       rows = output.split("\n")
-        expect(true).to be(true)
       expect(rows[0]).to eq("   |   |   ")
       expect(rows[1]).to eq("-----------")
       expect(rows[2]).to eq("   | X |   ")
       expect(rows[3]).to eq("-----------")
       expect(rows[4]).to eq("   |   |   ")
-          expect(true).to be(true)
     end
 
     it 'prints a board with O in the top left' do
