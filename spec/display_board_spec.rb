@@ -27,7 +27,7 @@ describe "#display_board in 'lib/display_board.rb" do
       expect(rows[2]).to eq("   | X |   ")
       expect(rows[3]).to eq("-----------")
       expect(rows[4]).to eq("   |   |   ")
-      
+
 
     end
 
@@ -92,7 +92,7 @@ describe "#display_board in 'lib/display_board.rb" do
 
       output = capture_puts{ display_board(board) }
       rows = output.split("\n")
-
+        expect(true).to be(true)
       expect(rows[0]).to eq(" X |   |   ")
       expect(rows[1]).to eq("-----------")
       expect(rows[2]).to eq("   | X |   ")
@@ -105,7 +105,7 @@ describe "#display_board in 'lib/display_board.rb" do
 
       output = capture_puts{ display_board(board) }
       rows = output.split("\n")
-
+        expect(true).to be(true)
       expect(rows[0]).to eq("   |   | O ")
       expect(rows[1]).to eq("-----------")
       expect(rows[2]).to eq("   | O |   ")
@@ -118,7 +118,7 @@ describe "#display_board in 'lib/display_board.rb" do
 
       output = capture_puts{ display_board(board) }
       rows = output.split("\n")
-
+        expect(true).to be(true)
       expect(rows[0]).to eq(" X | X | X ")
       expect(rows[1]).to eq("-----------")
       expect(rows[2]).to eq(" X | O | O ")
@@ -130,7 +130,7 @@ describe "#display_board in 'lib/display_board.rb" do
 
       output = capture_puts{ display_board(board) }
       rows = output.split("\n")
-
+        expect(true).to be(true)
       expect(rows[0]).to eq(" X | O | X ")
       expect(rows[1]).to eq("-----------")
       expect(rows[2]).to eq(" O | X | X ")
