@@ -20,15 +20,13 @@ describe "#display_board in 'lib/display_board.rb" do
 
       output = capture_puts{ display_board(board) }
       rows = output.split("\n")
-      expect(true).to be(true)
-
+        expect(true).to be(true)
       expect(rows[0]).to eq("   |   |   ")
       expect(rows[1]).to eq("-----------")
       expect(rows[2]).to eq("   | X |   ")
       expect(rows[3]).to eq("-----------")
       expect(rows[4]).to eq("   |   |   ")
-
-
+          expect(true).to be(true)
     end
 
     it 'prints a board with O in the top left' do
@@ -38,7 +36,7 @@ describe "#display_board in 'lib/display_board.rb" do
 
       output = capture_puts{ display_board(board) }
       rows = output.split("\n")
-        expect(true).to be(true)
+
       expect(rows[0]).to eq(" O |   |   ")
       expect(rows[1]).to eq("-----------")
       expect(rows[2]).to eq("   |   |   ")
@@ -50,7 +48,7 @@ describe "#display_board in 'lib/display_board.rb" do
       board = ["O", " ", " ", " ", "X", " ", " ", " ", " "]
       board[0] = "O"
       board[4] = "X"
-      expect(true).to be(true)
+
       output = capture_puts{ display_board(board) }
       rows = output.split("\n")
 
@@ -63,7 +61,7 @@ describe "#display_board in 'lib/display_board.rb" do
 
     it 'prints a board with X winning via the top row' do
       board = ["X", "X", "X", " ", " ", " ", " ", " ", " "]
-        expect(true).to be(true)
+
       output = capture_puts{ display_board(board) }
       rows = output.split("\n")
 
@@ -76,7 +74,7 @@ describe "#display_board in 'lib/display_board.rb" do
 
     it 'prints a board with O winning via the bottom row' do
       board = [" ", " ", " ", " ", " ", " ", "O", "O", "O"]
-        expect(true).to be(true)
+
       output = capture_puts{ display_board(board) }
       rows = output.split("\n")
 
@@ -92,7 +90,7 @@ describe "#display_board in 'lib/display_board.rb" do
 
       output = capture_puts{ display_board(board) }
       rows = output.split("\n")
-        expect(true).to be(true)
+
       expect(rows[0]).to eq(" X |   |   ")
       expect(rows[1]).to eq("-----------")
       expect(rows[2]).to eq("   | X |   ")
@@ -105,7 +103,7 @@ describe "#display_board in 'lib/display_board.rb" do
 
       output = capture_puts{ display_board(board) }
       rows = output.split("\n")
-        expect(true).to be(true)
+
       expect(rows[0]).to eq("   |   | O ")
       expect(rows[1]).to eq("-----------")
       expect(rows[2]).to eq("   | O |   ")
@@ -118,7 +116,7 @@ describe "#display_board in 'lib/display_board.rb" do
 
       output = capture_puts{ display_board(board) }
       rows = output.split("\n")
-        expect(true).to be(true)
+
       expect(rows[0]).to eq(" X | X | X ")
       expect(rows[1]).to eq("-----------")
       expect(rows[2]).to eq(" X | O | O ")
@@ -130,7 +128,7 @@ describe "#display_board in 'lib/display_board.rb" do
 
       output = capture_puts{ display_board(board) }
       rows = output.split("\n")
-        expect(true).to be(true)
+
       expect(rows[0]).to eq(" X | O | X ")
       expect(rows[1]).to eq("-----------")
       expect(rows[2]).to eq(" O | X | X ")
